@@ -1,0 +1,9 @@
+<input class="form-control" id="bilangan" placeholder="bilangan" style="width:30%"/><button class="btn btn-primary" id="tombolCariAkarKuadrat" style="font-weight: bold;">Cari akar kuadrat</button>
+<div id="hasil"></div>
+<script>
+$(document).ready(function(){
+    $("#tombolCariAkarKuadrat").on("click", function(){
+        $("#hasil").html(Math.sqrt($("#bilangan").val()));
+    });
+});
+</script>
